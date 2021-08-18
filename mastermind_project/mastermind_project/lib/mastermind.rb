@@ -24,9 +24,12 @@ attr_accessor :secret_code
     
     end
     def ask_user_for_guess
+
+
+        p "Enter a code"
         
-
-
+        Code.from_string(gets.chomp)
+        
 
 
 
