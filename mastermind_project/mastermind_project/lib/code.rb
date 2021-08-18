@@ -95,7 +95,7 @@ attr_accessor :pegs
     unmatched_pegs.each {|color| upcount[color] += 1}
 
     upcount.each {|k, v| near_matches += 1 if ugpcount.has_key?(k)}
-
+#regular comment
 
   near_matches
 end
