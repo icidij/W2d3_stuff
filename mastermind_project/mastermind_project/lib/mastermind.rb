@@ -28,12 +28,13 @@ attr_accessor :secret_code
 
         p "Enter a code"
         
-        Code.from_string(gets.chomp)
-        
+        q = Code.from_string(gets.chomp)
 
+        p @secret_code.num_exact_matches(q)
+        p @secret_code.num_near_matches(q)
+        p @secret_code.num_exact_matches(q) == q.length
 
-
-
+    end
 
 
 
